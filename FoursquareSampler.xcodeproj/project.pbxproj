@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363CA78C1564461500B02A60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363CA78B1564461500B02A60 /* UIKit.framework */; };
+		363CA78E1564461500B02A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363CA78D1564461500B02A60 /* Foundation.framework */; };
+		363CA7901564461500B02A60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363CA78F1564461500B02A60 /* CoreGraphics.framework */; };
+		363CA7961564461500B02A60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 363CA7941564461500B02A60 /* InfoPlist.strings */; };
+		363CA7981564461500B02A60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CA7971564461500B02A60 /* main.m */; };
+		363CA79C1564461500B02A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CA79B1564461500B02A60 /* AppDelegate.m */; };
+		363CA79F1564461500B02A60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CA79E1564461500B02A60 /* ViewController.m */; };
+		363CA7A21564461500B02A60 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363CA7A01564461500B02A60 /* ViewController.xib */; };
+		363CA7AA1564464500B02A60 /* FoursquareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CA7A91564464500B02A60 /* FoursquareManager.m */; };
+		363CA7AC156447E200B02A60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363CA7AB156447E200B02A60 /* CoreLocation.framework */; };
+		363CA7B5156510CF00B02A60 /* NSURLConnection+Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CA7B4156510CF00B02A60 /* NSURLConnection+Tag.m */; };
+		364F97F21565B2DA00A99346 /* NSDictionary+Iteration.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F97F11565B2DA00A99346 /* NSDictionary+Iteration.m */; };
+		364F97F51565B99700A99346 /* NSArray+Iteration.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F97F41565B99700A99346 /* NSArray+Iteration.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		363CA7871564461500B02A60 /* FoursquareSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		363CA78B1564461500B02A60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		363CA78D1564461500B02A60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		363CA78F1564461500B02A60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		363CA7931564461500B02A60 /* FoursquareSampler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoursquareSampler-Info.plist"; sourceTree = "<group>"; };
+		363CA7951564461500B02A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		363CA7971564461500B02A60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		363CA7991564461500B02A60 /* FoursquareSampler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoursquareSampler-Prefix.pch"; sourceTree = "<group>"; };
+		363CA79A1564461500B02A60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		363CA79B1564461500B02A60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		363CA79D1564461500B02A60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		363CA79E1564461500B02A60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		363CA7A11564461500B02A60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		363CA7A81564464500B02A60 /* FoursquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareManager.h; sourceTree = "<group>"; };
+		363CA7A91564464500B02A60 /* FoursquareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareManager.m; sourceTree = "<group>"; };
+		363CA7AB156447E200B02A60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		363CA7B3156510CF00B02A60 /* NSURLConnection+Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Tag.h"; sourceTree = "<group>"; };
+		363CA7B4156510CF00B02A60 /* NSURLConnection+Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Tag.m"; sourceTree = "<group>"; };
+		364F97F01565B2DA00A99346 /* NSDictionary+Iteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Iteration.h"; sourceTree = "<group>"; };
+		364F97F11565B2DA00A99346 /* NSDictionary+Iteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Iteration.m"; sourceTree = "<group>"; };
+		364F97F31565B99700A99346 /* NSArray+Iteration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Iteration.h"; sourceTree = "<group>"; };
+		364F97F41565B99700A99346 /* NSArray+Iteration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Iteration.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363CA7841564461500B02A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363CA7AC156447E200B02A60 /* CoreLocation.framework in Frameworks */,
+				363CA78C1564461500B02A60 /* UIKit.framework in Frameworks */,
+				363CA78E1564461500B02A60 /* Foundation.framework in Frameworks */,
+				363CA7901564461500B02A60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363CA77C1564461400B02A60 = {
+			isa = PBXGroup;
+			children = (
+				364F97F31565B99700A99346 /* NSArray+Iteration.h */,
+				364F97F41565B99700A99346 /* NSArray+Iteration.m */,
+				364F97F01565B2DA00A99346 /* NSDictionary+Iteration.h */,
+				364F97F11565B2DA00A99346 /* NSDictionary+Iteration.m */,
+				363CA7B3156510CF00B02A60 /* NSURLConnection+Tag.h */,
+				363CA7B4156510CF00B02A60 /* NSURLConnection+Tag.m */,
+				363CA7AB156447E200B02A60 /* CoreLocation.framework */,
+				363CA7911564461500B02A60 /* FoursquareSampler */,
+				363CA78A1564461500B02A60 /* Frameworks */,
+				363CA7881564461500B02A60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		363CA7881564461500B02A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				363CA7871564461500B02A60 /* FoursquareSampler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		363CA78A1564461500B02A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				363CA78B1564461500B02A60 /* UIKit.framework */,
+				363CA78D1564461500B02A60 /* Foundation.framework */,
+				363CA78F1564461500B02A60 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		363CA7911564461500B02A60 /* FoursquareSampler */ = {
+			isa = PBXGroup;
+			children = (
+				363CA79A1564461500B02A60 /* AppDelegate.h */,
+				363CA79B1564461500B02A60 /* AppDelegate.m */,
+				363CA79D1564461500B02A60 /* ViewController.h */,
+				363CA79E1564461500B02A60 /* ViewController.m */,
+				363CA7A01564461500B02A60 /* ViewController.xib */,
+				363CA7921564461500B02A60 /* Supporting Files */,
+				363CA7A81564464500B02A60 /* FoursquareManager.h */,
+				363CA7A91564464500B02A60 /* FoursquareManager.m */,
+			);
+			path = FoursquareSampler;
+			sourceTree = "<group>";
+		};
+		363CA7921564461500B02A60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363CA7931564461500B02A60 /* FoursquareSampler-Info.plist */,
+				363CA7941564461500B02A60 /* InfoPlist.strings */,
+				363CA7971564461500B02A60 /* main.m */,
+				363CA7991564461500B02A60 /* FoursquareSampler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		363CA7861564461500B02A60 /* FoursquareSampler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363CA7A51564461500B02A60 /* Build configuration list for PBXNativeTarget "FoursquareSampler" */;
+			buildPhases = (
+				363CA7831564461500B02A60 /* Sources */,
+				363CA7841564461500B02A60 /* Frameworks */,
+				363CA7851564461500B02A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoursquareSampler;
+			productName = FoursquareSampler;
+			productReference = 363CA7871564461500B02A60 /* FoursquareSampler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363CA77E1564461400B02A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = LoFT;
+			};
+			buildConfigurationList = 363CA7811564461400B02A60 /* Build configuration list for PBXProject "FoursquareSampler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 363CA77C1564461400B02A60;
+			productRefGroup = 363CA7881564461500B02A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363CA7861564461500B02A60 /* FoursquareSampler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		363CA7851564461500B02A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363CA7961564461500B02A60 /* InfoPlist.strings in Resources */,
+				363CA7A21564461500B02A60 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363CA7831564461500B02A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363CA7981564461500B02A60 /* main.m in Sources */,
+				363CA79C1564461500B02A60 /* AppDelegate.m in Sources */,
+				363CA79F1564461500B02A60 /* ViewController.m in Sources */,
+				363CA7AA1564464500B02A60 /* FoursquareManager.m in Sources */,
+				363CA7B5156510CF00B02A60 /* NSURLConnection+Tag.m in Sources */,
+				364F97F21565B2DA00A99346 /* NSDictionary+Iteration.m in Sources */,
+				364F97F51565B99700A99346 /* NSArray+Iteration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		363CA7941564461500B02A60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363CA7951564461500B02A60 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		363CA7A01564461500B02A60 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363CA7A11564461500B02A60 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		363CA7A31564461500B02A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		363CA7A41564461500B02A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		363CA7A61564461500B02A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoursquareSampler/FoursquareSampler-Prefix.pch";
+				INFOPLIST_FILE = "FoursquareSampler/FoursquareSampler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		363CA7A71564461500B02A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoursquareSampler/FoursquareSampler-Prefix.pch";
+				INFOPLIST_FILE = "FoursquareSampler/FoursquareSampler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363CA7811564461400B02A60 /* Build configuration list for PBXProject "FoursquareSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363CA7A31564461500B02A60 /* Debug */,
+				363CA7A41564461500B02A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363CA7A51564461500B02A60 /* Build configuration list for PBXNativeTarget "FoursquareSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363CA7A61564461500B02A60 /* Debug */,
+				363CA7A71564461500B02A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 363CA77E1564461400B02A60 /* Project object */;
+}
