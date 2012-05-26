@@ -10,11 +10,28 @@
 #import "NSURLConnection+Tag.h"
 #import "NSDictionary+Iteration.h"
 
+
+@implementation RestaurantObject
+@synthesize name, venueId, hasMenu;
+
+-(NSString*)description
+{
+    return [NSString stringWithFormat:@"Restaurant %@ with VenueID %@ has menu %d", name, venueId, hasMenu];
+}
+@end
+
+
+@implementation MenuItemObject
+@synthesize name, menuItemId, price;
+@end
+
+
 typedef enum {
     FSQueryCategories,
     FSQueryVenues,
     FSQueryMenues
 } FSQuery;
+
 
 @interface FoursquareManager ()
 -(void)performQueryForURL:(NSString*)_url withQueryType:(FSQuery)_type;
@@ -165,7 +182,7 @@ typedef enum {
         return;
     }
     
-    if (![[[dictionary objectForKey:@"meta"] objectForKey:@"code"] isEqual:@"200"]) {
+    if (![[dictionary objectForKey:@"meta"] objectForKey:@"code"] == 200) {
 
         error = [NSError errorWithDomain:@"Foursquare API Error" 
                                     code:[[[dictionary objectForKey:@"meta"] objectForKey:@"code"] intValue] 
@@ -186,7 +203,7 @@ typedef enum {
             
         case FSQueryVenues:{
             
-            NSDictionary *venues = [response objectForKey:@"venues"];
+            NSArray *venues = [response objectForKey:@"venues"];
             
             if (venues == nil) {
                 error = [NSError errorWithDomain:@"Foursquare API Error" code:FSErrorGettingVenues userInfo:[NSDictionary dictionaryWithObject:@"Failed Getting Venues from Foursquare" forKey:NSLocalizedDescriptionKey]];

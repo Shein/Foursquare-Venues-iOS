@@ -11,12 +11,24 @@
 #import <Foundation/Foundation.h>
 
 
+@interface RestaurantObject : NSObject
+@property (nonatomic, retain) NSString *name, *venueId;
+@property (nonatomic, assign) BOOL hasMenu;
+@end
+
+
+@interface MenuItemObject : NSObject
+@property (nonatomic, retain) NSString *name, *menuItemId, *price;
+@end
+
+
 enum {
     FSErrorGettingCategory,
     FSErrorGettingVenues,
     FSErrorGettingMenus,
     FSErrorConnection
 };
+
 
 @protocol FoursquareManagerDelegate <NSObject>
 
@@ -26,7 +38,7 @@ enum {
 -(void)receivedCategoryId:(NSString*)_id forName:(NSString*)_name;
 
 // Category is nil if no category filter was used
--(void)receivedVenues:(NSDictionary*)_venues;
+-(void)receivedVenues:(NSArray*)_venues;
 -(void)receivedMenu:(NSArray*)menu forVenue:(NSDictionary*)_venue;
 @end
 
@@ -53,3 +65,4 @@ enum {
 -(void)requestMenuForVenueById:(NSString*)_venueId;
 
 @end
+
